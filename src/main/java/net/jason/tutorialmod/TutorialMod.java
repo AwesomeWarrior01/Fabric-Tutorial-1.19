@@ -1,6 +1,7 @@
 package net.jason.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.jason.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //Very Important Comment
@@ -10,5 +11,6 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
